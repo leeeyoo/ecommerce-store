@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { Category } from "@/types";
 
 interface MainNavProps {
-  data: Category[];
+  data: Category[];     
 };
 
 const MainNav: React.FC<MainNavProps> = ({
@@ -22,7 +22,7 @@ const MainNav: React.FC<MainNavProps> = ({
   }));
 
   return ( 
-    <div
+    <nav
       className="mx-6 flex items-center space-x-4 lg:space-x-6"
     >
       {routes.map((route) => (
@@ -37,7 +37,7 @@ const MainNav: React.FC<MainNavProps> = ({
           {route.label}
         </Link>
       ))}
-    </div>
+    </nav>
    );
 }
  

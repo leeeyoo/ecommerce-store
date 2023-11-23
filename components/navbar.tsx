@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 import Container from "@/components/ui/container";
-import MainNav from "@/components/mainnav";
+import MainNav from "@/components/main-nav";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
 
-export const revalidate = 0;
+// export const revalidate = 0;
 
 const Navbar = async () => {
   const categories = await getCategories();
